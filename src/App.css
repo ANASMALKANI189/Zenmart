@@ -1,0 +1,298 @@
+/* Navbar */
+.nav{
+  display:flex;
+  background-color: #09def5;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 50%;
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 3px;
+  display: flex;
+}
+
+.nav ul li {
+  margin-left: 20px;
+  gap: 10px;
+  float: right;
+}
+
+.search{
+  height: 20px;
+  border-radius: 10px;
+  margin-left: 40PX;
+  width: 460px;
+  outline: none;
+  border-color: white;
+  
+}
+
+
+img{
+  padding: 0 10px;
+  width: 15px;
+  height: 15px;
+}
+.abt{
+  width: 14px;
+  height: 14px;
+}
+.cl{
+  width: 14px;
+  height: 14px;
+}
+
+
+/* Main Content */
+.main {
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  padding-top: 60px; /* To avoid overlap with the fixed navbar */
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.category {
+  text-align: center;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+}
+
+/* Cards */
+.cardsWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  
+}
+
+.card1 {
+  padding: 20px;
+  width: 350px; /* Fixed width for square shape */
+  height: 250px; /* Fixed height for square shape */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .card1 {
+    width: 100%; /* Adjust for responsiveness */
+    height: auto; /* Adjust for responsiveness */
+}
+}
+
+
+.cardHeading {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product {
+  text-align: center;
+}
+
+.product img {
+  width: 50px;
+  height: 50px;
+}
+
+.product p {
+  font-size: 14px;
+  color: #222;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #017184;
+}
+
+.card a:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+  .card1 {
+    width: 100%;
+  }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  margin-top: 100px;
+  background: #131a22;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-part-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-part-1 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+}
+
+.footer-part-1 ul li {
+  line-height: 1.4;
+  font-size: 12px;
+  color: #777;
+  font-weight: 600;
+}
+
+.footer-part-1 ul li:first-child {
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-part-1 ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-part-2 {
+  padding: 10px 0 40px 0;
+}
+
+.footer-part-2 p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-part-2 a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.footer-part-2 a:hover {
+  text-decoration: underline;
+}
+
+.footer-part-sm .lang {
+  margin-bottom: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.content-wrapper * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content-wrapper ::selection {
+  background: #e84393;
+  color: #fff;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 28%;
+  padding-top: 80px; /* Added padding to avoid overlap with the navbar */
+}
+
+.card {
+  display: flex;
+  width: 600px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card .right {
+  background: #fff;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+
+.card .right .logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+.card .right .about p {
+  color: #8d8d8d;
+  font-size: 17px;
+  margin-top: 16px;
+}
+
+.card .right button {
+  background: #e84393;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: #fff;
+}
+
+.card .right h1 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.card button:hover {
+  transform: scale(0.98);
+}
+
+/* .card .left img{
+  background-image: url('C:/Users/anasm/OneDrive/Desktop/E-commerce/client/E-comm/src/assets/Iphone.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%; /* Adjust height as needed 
+  position: relative;
+} */
+
+
